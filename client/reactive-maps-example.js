@@ -6,6 +6,15 @@ if (Meteor.isClient) {
       });
 
       var markers = {};
+      var latLng = Geolocation.latLng();
+      var myloc = new google.maps.Marker({
+          position: new google.maps.LatLng(latLng.lat, latLng.lng),
+          icon: {
+              path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+              scale: 5
+          },
+          map: map.instance
+      });
 
       Markers.find().observe({
         added: function (document) {
