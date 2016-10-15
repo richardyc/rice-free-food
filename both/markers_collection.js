@@ -11,18 +11,13 @@ const schema = new SimpleSchema({
         max: 50,
         index: 1
     },
-    location: {
-        type: Object,
-        optional: true,
-        label: "Location info"
-    },
-    "location.longitude": {
+    lng: {
         type: Number,
         decimal: true,
         optional: true
     },
 
-    "location.latitude": {
+    lat: {
         type: Number,
         decimal: true,
         optional: true
