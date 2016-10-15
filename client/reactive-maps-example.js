@@ -25,7 +25,7 @@ if (Meteor.isClient) {
 
                     var contentString = '<div id="content">'+
                         '<div id="siteNotice">'+
-                            '<input onclick="Markers.remove(marker.id)" type=button value="Delete Markers">'+
+                            '<input id =' + document._id + ' type=button value="Delete Markers">'+
                         '</div>'+
                         '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
                         '<div id="bodyContent">'+
@@ -50,6 +50,13 @@ if (Meteor.isClient) {
                         maxWidth: 200
                     });
 
+                    google.maps.event.addListener(infowindow,'domready',function(){
+                        $('#siteNotice').click(function() {
+                            console.log("clicked on delete");
+                        });
+                    });
+
+
                     var marker = new google.maps.Marker({
                         draggable: true,
                         animation: google.maps.Animation.DROP,
@@ -63,7 +70,8 @@ if (Meteor.isClient) {
                     });
 
                     google.maps.event.addListener(marker, 'dragend', function(event) {
-                        Markers.update(marker.id, { $set: { lat: event.latLng.lat(), lng: event.latLng.lng() }});
+                        //Markers.update(marker.id, { $set: { lat: event.latLng.lat(), lng: event.latLng.lng() }});
+                        Markers.remove(marker.id);
                     });
 
                     markers[document._id] = marker;
