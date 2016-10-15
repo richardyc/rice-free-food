@@ -3,7 +3,24 @@
 </head>
 
 <body>
+<div id="floating-panel">
+      <input onclick="deleteMarkers();" type=button value="Delete Markers">
+    </div>
   {{> map}}
+  
+  
+  <script>
+      // Removes the markers from the map, but keeps them in the array.
+      function clearMarkers() {
+        setMapOnAll(null);
+      }
+	  
+      // Deletes all markers in the array by removing references to them.
+      function deleteMarkers() {
+        clearMarkers();
+        markers = [];
+      }
+</script>
 </body>
 
 <template name="map">

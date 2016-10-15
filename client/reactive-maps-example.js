@@ -25,6 +25,7 @@ if (Meteor.isClient) {
 
                     var contentString = '<div id="content">'+
                         '<div id="siteNotice">'+
+                            '<input onclick="deleteMarkers();" type=button value="Delete Markers">'+
                         '</div>'+
                         '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
                         '<div id="bodyContent">'+
