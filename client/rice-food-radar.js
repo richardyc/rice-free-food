@@ -52,7 +52,7 @@ if (Meteor.isClient) {
 
                     google.maps.event.addListener(infowindow,'domready',function(){
                         $('#siteNotice').click(function() {
-                            console.log("clicked on delete");
+                            Markers.remove(marker.id);
                         });
                     });
 
@@ -70,8 +70,7 @@ if (Meteor.isClient) {
                     });
 
                     google.maps.event.addListener(marker, 'dragend', function(event) {
-                        //Markers.update(marker.id, { $set: { lat: event.latLng.lat(), lng: event.latLng.lng() }});
-                        Markers.remove(marker.id);
+                        Markers.update(marker.id, { $set: { lat: event.latLng.lat(), lng: event.latLng.lng() }});
                     });
 
                     markers[document._id] = marker;
