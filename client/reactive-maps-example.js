@@ -1,6 +1,6 @@
 
 if (Meteor.isClient) {
-    var MAP_ZOOM = 15;
+    var MAP_ZOOM = 16;
 
     Template.map.onCreated(function() {
         GoogleMaps.ready('map', function(map) {
@@ -25,7 +25,7 @@ if (Meteor.isClient) {
 
                     var contentString = '<div id="content">'+
                         '<div id="siteNotice">'+
-                            '<input onclick="deleteMarkers();" type=button value="Delete Markers">'+
+                            '<input onclick="Markers.remove(marker.id)" type=button value="Delete Markers">'+
                         '</div>'+
                         '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
                         '<div id="bodyContent">'+
@@ -49,7 +49,6 @@ if (Meteor.isClient) {
                         content: contentString,
                         maxWidth: 200
                     });
-
 
                     var marker = new google.maps.Marker({
                         draggable: true,
