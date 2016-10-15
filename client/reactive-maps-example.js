@@ -41,12 +41,14 @@ if (Meteor.isClient) {
 
   Template.map.helpers({
     mapOptions: function() {
-      if (GoogleMaps.loaded()) {
-        return {
-          center: new google.maps.LatLng(-37.8136, 144.9631),
-          zoom: 8
-        };
-      }
+        var latLng = Geolocation.latLng();
+        // Initialize the map once we have the latLng.
+        if (GoogleMaps.loaded()) {
+            return {
+                center: new google.maps.LatLng(latLng.lat, latLng.lng),
+                zoom: 15
+            };
+        }
     }
   });
 }
