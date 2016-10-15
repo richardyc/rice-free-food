@@ -1,15 +1,17 @@
-/**
- * Created by heyuc on 10/14/2016.
- */
-Markers = new Mongo.Collection('markers');
+Events = new Mongo.Collection('events');
 
 const schema = new SimpleSchema({
-    event_id: { // KEEP
-        optional: true,
+    name: {
         type: String,
-        label: "User ID",
-        max: 50,
-        index: 1
+        optional: false,
+        label: "Event name"
+    }, food_type: {
+        type: String,
+        optional: false,
+        label: "Food type"
+    }, expiration_time: {
+        type: Date,
+        optional: false
     },
     location: {
         type: Object,
@@ -28,5 +30,4 @@ const schema = new SimpleSchema({
         optional: true
     }
 });
-
-Markers.attachSchema(schema);
+Events.attachSchema(schema);
