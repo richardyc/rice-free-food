@@ -27,3 +27,4 @@ huttonr:bootstrap3
 standard-minifier-css
 standard-minifier-js
 shell-server
+iron:router
