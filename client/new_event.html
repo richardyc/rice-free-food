@@ -39,7 +39,16 @@
             <textarea class="form-control" rows="5" id="description"></textarea>
 			            <label for="name">Location</label>
             <input type="text" class="form-control" id="name">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+			
+            <label for="type">Food Type</label>
+            <input type="text" class="type" id="type">
+
+            <label for="description">Event Description(Optional)</label>
+            <textarea class="form-control" rows="5" id="description"></textarea>
+
+            <label for="name">Location(Building Name, Room Number)</label>
+            <input type="text" class="form-control" id="place">
+        <button class="btn btn-lg btn-primary btn-block" type="submit" >Submit</button>
       </form>
 	  {{> addMap}}
 

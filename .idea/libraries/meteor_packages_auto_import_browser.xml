@@ -49,6 +49,8 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/1.0.9/web.browser/min-max-heap.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/1.0.9/web.browser/min-heap.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/1.0.9/web.browser/max-heap.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/momentjs_moment/2.15.1/web.browser/moment.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/momentjs_moment/2.15.1/web.browser/meteor/export.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/templating-runtime/1.2.15/web.browser/dynamic.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/templating-runtime/1.2.15/web.browser/templating.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/1.0.8/web.browser/retry.js" />
@@ -228,6 +230,8 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/1.0.9/web.browser/min-max-heap.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/1.0.9/web.browser/min-heap.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/1.0.9/web.browser/max-heap.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/momentjs_moment/2.15.1/web.browser/moment.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/momentjs_moment/2.15.1/web.browser/meteor/export.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/templating-runtime/1.2.15/web.browser/dynamic.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/templating-runtime/1.2.15/web.browser/templating.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/1.0.8/web.browser/retry.js" />
