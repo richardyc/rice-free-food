@@ -28,3 +28,4 @@ standard-minifier-css
 standard-minifier-js
 shell-server
 iron:router
+momentjs:moment
