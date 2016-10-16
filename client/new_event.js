@@ -2,7 +2,8 @@ var MAP_ZOOM = 16;
 
 var previous_marker = null;
 Template.NewEvent.events({
-   'click #submit_event': function() {
+   'click #submit_event': function(e) {
+       e.preventDefault();
        if(!previous_marker) {
            alert('Must fill in information and location');
        } else {
@@ -16,7 +17,7 @@ Template.NewEvent.events({
            var lat = previous_marker.position.lat();
            console.log('event lat: ' + lat);
 
-           var long = previous_marker.position.lng();
+           var long = previous_marker.position.lng( );
            
            var tomorrow = new Date();
            tomorrow.setDate(tomorrow.getDate() + 1);

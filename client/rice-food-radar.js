@@ -22,6 +22,16 @@ if (Meteor.isClient) {
             Markers.find().observe({
 
                 added: function (document) {
+                    var marker = new google.maps.Marker({
+                        draggable: true,
+                        animation: google.maps.Animation.DROP,
+                        position: new google.maps.LatLng(document.lat, document.lng),
+                        map: map.instance,
+                        // We store the document _id on the marker in order
+                        // to update the document within the 'dragend' event below.
+                        id: document._id
+                    });
+
 
                     var contentString = '<div id="content">'+
                         '<div id="siteNotice">'+
