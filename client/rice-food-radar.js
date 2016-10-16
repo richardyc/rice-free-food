@@ -71,7 +71,7 @@ if (Meteor.isClient) {
     });
 
     Meteor.startup(function() {
-        GoogleMaps.load();
+        GoogleMaps.load({ v: '3', key: 'AIzaSyDVKrva_571qoW2M01JF9RBVJFbhSpr6pQ', libraries: 'geometry,places' });
     });
 
     Template.map.helpers({
