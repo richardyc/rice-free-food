@@ -4,8 +4,6 @@
     <list default="true" id="80caa507-a264-485a-9c9c-9f0ad24b109f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/new_event.html" afterPath="$PROJECT_DIR$/client/new_event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/new_event.js" afterPath="$PROJECT_DIR$/client/new_event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/rice-food-radar.js" afterPath="$PROJECT_DIR$/client/rice-food-radar.js" />
     </list>
     <ignored path="rice-free-food.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_event.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new_event.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/new_event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            <state relative-caret-position="578">
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -98,7 +96,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_event.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new_event.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/new_event.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -144,9 +142,9 @@
         <option value="$PROJECT_DIR$/client/index/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/both/events_collection.js" />
-        <option value="$PROJECT_DIR$/client/new_event.html" />
         <option value="$PROJECT_DIR$/client/rice-food-radar.js" />
         <option value="$PROJECT_DIR$/client/new_event.js" />
+        <option value="$PROJECT_DIR$/client/new_event.html" />
       </list>
     </option>
   </component>
@@ -487,7 +485,7 @@
       <workItem from="1476496170354" duration="1244000" />
       <workItem from="1476505004103" duration="9784000" />
       <workItem from="1476581256677" duration="174000" />
-      <workItem from="1476581497954" duration="13816000" />
+      <workItem from="1476581497954" duration="14237000" />
     </task>
     <task id="LOCAL-00001" summary="Define mongo collections">
       <created>1476506918502</created>
@@ -545,11 +543,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476594038468</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix home page Google Maps Display">
+      <created>1476595386729</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1476595386729</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25018000" />
+    <option name="totallyTimeSpent" value="25439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -593,7 +598,8 @@
     <MESSAGE value="Change routing + define second google maps template" />
     <MESSAGE value="Make unique marker in add event" />
     <MESSAGE value="Finish elementary event creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish elementary event creation" />
+    <MESSAGE value="Fix home page Google Maps Display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix home page Google Maps Display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -726,14 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/both/events_collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -760,18 +758,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/new_event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/new_event.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/both/events_collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/new_event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
           <folding />
         </state>
       </provider>
