@@ -9,8 +9,16 @@ const schema = new SimpleSchema({
         type: String,
         optional: false,
         label: "Food type"
-    }, expiration_time: {
+    }, description: {
+        type: String,
+        optional: false,
+        label: "Description"
+    },
+    expiration_time: {
         type: Date,
+        optional: false
+    }, place: {
+        type: String,
         optional: false
     },
     location: {

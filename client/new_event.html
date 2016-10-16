@@ -8,19 +8,25 @@
             <label for="name">Event Name</label>
             <input type="text" class="form-control" id="name">
         </div>
+
+        <div class="form-group">
+            <label for="type">Food Type</label>
+            <input type="text" class="type" id="type">
+        </div>
+
         <div class="form-group">
             <label for="description">Event Description(Optional)</label>
             <textarea class="form-control" rows="5" id="description"></textarea>
         </div>
 
         <div class="form-group">
-            <label for="name">Location</label>
-            <input type="text" class="form-control" id="name">
+            <label for="name">Location(Building Name, Room Number)</label>
+            <input type="text" class="form-control" id="place">
         </div>
         {{> addMap}}
 
 
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" id = 'submit_event'>Submit</button>
 
 
     </div>
