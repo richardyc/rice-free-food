@@ -56,21 +56,8 @@ if (Meteor.isClient) {
                         });
                     });
 
-
-                    var marker = new google.maps.Marker({
-                        draggable: true,
-                        animation: google.maps.Animation.DROP,
-                        position: new google.maps.LatLng(document.lat, document.lng),
-                        map: map.instance,
-                        id: document._id
-                    });
-
                     marker.addListener('click', function() {
                         infowindow.open(map, marker);
-                    });
-
-                    google.maps.event.addListener(marker, 'dragend', function(event) {
-                        Markers.update(marker.id, { $set: { lat: event.latLng.lat(), lng: event.latLng.lng() }});
                     });
 
                     markers[document._id] = marker;
