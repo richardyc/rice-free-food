@@ -4,7 +4,8 @@
 Template.home.created = function(){
 };
 Template.homeNav.events({
-    'click #new': function() {
+    'click #new': function(e) {
+        e.preventDefault();
         Router.go("/new");
     }
 });
