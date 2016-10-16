@@ -7,5 +7,9 @@ Template.homeNav.events({
     'click #new': function(e) {
         e.preventDefault();
         Router.go("/new");
+    },
+    'click #home': function(e) {
+        e.preventDefault();
+        Router.go("/");
     }
 });
