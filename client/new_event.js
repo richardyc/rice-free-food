@@ -1,5 +1,42 @@
 var MAP_ZOOM = 16;
 
+var previous_marker = null;
+Template.addMap.onCreated(function() {
+    GoogleMaps.ready('map', function(map) {
+        google.maps.event.addListener(map.instance, 'click', function(event) {
+            if (previous_marker) {
+                previous_marker.setMap(null);
+            }
+            var marker = new google.maps.Marker({
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
+                map: map.instance
+                //id: document._id
+            });
+
+            previous_marker = marker;
+
+
+            google.maps.event.addListener(marker, 'dragend', function(e) {
+                Markers.update(marker.id, { $set: { lat: e.latLng.lat(), lng: e.latLng.lng() }});
+            });
+        });
+
+        var latLng = Geolocation.latLng();
+        var myloc = new google.maps.Marker({
+            position: new google.maps.LatLng(latLng.lat, latLng.lng),
+            icon: {
+                path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+                scale: 5
+            },
+            map: map.instance
+        });
+
+    });
+});
+
+
 Template.addMap.helpers({
     geolocationError: function() {
         var error = Geolocation.error();
